@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Online Stock Trading and Investment Platform</title>
+   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color:palevioletred;
+        } .team-member {
+            display: none;
+        }
+       
+        button {
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+            color:blue;
+        }
+        .team-member {
+            display: none;
+            color: aquamarine;
+        }
+        
+        header {
+            background-color:black;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            color: blueviolet;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            color:purple;
+        }
+
+        #customer-details {
+            width: 40%;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            color:firebrick;
+        }
+
+        #investment-info {
+            width: 40%;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            color: black;
+        }
+
+        #happy-investor {
+            width: 20%;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            color: black;
+        }
+
+        #benefits,
+        #policy,
+        #services,
+        #companies {
+            margin-top: 60px;
+            padding: 90px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Stock Market and Investment Platform</h1>
+    </header>
+    <header>
+      
+        <p>Open Demat Account</p>
+    </header>
+
+    <main>
+        <form id="demat-account-form">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" required>
+
+            <label for="pan">PAN Number:</label>
+            <input type="text" id="pan" required>
+
+            <button type="button" onclick="submitDematAccountForm()">Submit</button>
+        </form>
+    </main>
+
+    <body>
+
+        <div id="thank-you-message">
+            Thank you for visiting our website!
+        </div>
+
+        <script>
+            // You can customize this message or add additional actions here
+            window.onload = function () {
+                alert("Thank you for visiting our website!");
+            };
+        </script>
+        <script>
+            function submitDematAccountForm() {
+                const fullName = document.getElementById('full-name').value;
+                const email = document.getElementById('email').value;
+                const mobile = document.getElementById('mobile').value;
+                const pan = document.getElementById('pan').value;
+
+                // In a real-world scenario, you would send this data to a server for processing
+                // Here, let's just display the collected data
+                alert(`Demat Account Request:
+                Full Name: ${fullName}
+                Email: ${email}
+                Mobile: ${mobile}
+                PAN: ${pan}`);
+            }
+        </script>
+
+        <main>
+            <div id="customer-details">
+                <h2>Customer Details</h2>
+                <label for="customer-mobile">Mobile:</label>
+                <input type="tel" id="customer-mobile" required>
+
+                <label for="customer-state">State:</label>
+                <select id="customer-state" required>
+                   
+                    
+                    <!-- Add more states as needed -->
+                </select>
+            </div>
+
+            <div id="investment-info">
+                <h2>Investment Information</h2>
+                <label for="investment-amount">Investment Amount ($):</label>
+                <input type="number" id="investment-amount" required>
+
+                <label for="investment-options">Investment Options:</label>
+                <select id="investment-options" required>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 3</option>
+                    <option value="option2">Option 4</option>
+                    <option value="option2">Option 5</option>
+                    <option value="option2">Option 6</option>
+                    <!-- Add more investment options as needed -->
+                </select>
+            </div>
+<br>
+            <div id="happy-investor">
+                <h2>Investor</h2>
+                <img src="https://www.theforage.com/blog/wp-content/uploads/2022/09/what-is-an-investor.jpg"
+                    alt="Happy Investor">
+                    <br>
+            </div>  <div id="happy-investor">
+                <h2>Investor</h2>
+                <img src="https://tradebrains.in/wp-content/uploads/2021/12/Minimum-Amount-For-Trading-in-india-2023-Cover-Image-1080x675.jpg"
+                    alt="Happy Investor">
+            </div>
+        </main>
+
+    <title>Benefits of Investing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:lavenderblush;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <h2>Benefits of Investing</h2>
+        <ul>
+            <li><strong>Potential for Growth:</strong>
+                <ul>
+                    <li>Capital Appreciation: Investing in stocks provides an opportunity for capital appreciation as stock prices may increase over time.</li>
+                    <li>Dividends: Some stocks pay dividends, providing investors with a stream of income.</li>
+                </ul>
+            </li>
+
+            <li><strong>Diversification:</strong>
+                <ul>
+                    <li>Reduced Risk: A well-diversified portfolio can help spread risk across different asset classes and industries, reducing the impact of poor performance in one area.</li>
+                </ul>
+            </li>
+
+            <li><strong>Wealth Building:</strong>
+                <ul>
+                    <li>Compounding Returns: Over the long term, compounding returns can significantly increase the value of an investment.</li>
+                </ul>
+            </li>
+
+            <li><strong>Liquidity:</strong>
+                <ul>
+                    <li>Ease of Buying and Selling: Stocks are generally liquid assets, allowing investors to buy and sell them relatively easily.</li>
+                </ul>
+            </li>
+
+            <li><strong>Ownership Stake:</strong>
+                <ul>
+                    <li>Ownership in Companies: Investing in stocks means owning a share of the company. Shareholders of
+
+        <p>Explore the benefits of investing with us...</p>
+        <!-- Add more content as needed -->
+        <!-- <div id="happy-investor">
+            <div class="flex-grow">
+                <h2 class="text-gray-900 text-lg title-font font-medium mb-3"></h2>
+                <p class="leading-relaxed text-base"> -->
+        <h1>policy</h1>
+        <img src="https://media.licdn.com/dms/image/C5612AQGR2LEeLIJFdA/article-cover_image-shrink_720_1280/0/1557394541882?e=2147483647&v=beta&t=c5DDT8i1LTRcYU2KerPl2h8sxf9AetoT4W--exzvLck"
+            alt=" Investor">
+        <h2>1. Wealth Growth</h2>
+        <p>Investing allows your money to grow over time through the power of compounding.</p>
+
+        <h2>2. Diversification</h2>
+        <p>Diversifying your investments across different asset classes can help manage risk.</p>
+
+        <h2>3. Passive Income</h2>
+        <p>Some investments, like dividend-paying stocks or real estate, can provide a steady stream of passive income.
+        </p>
+
+        <h2>4. Beat Inflation</h2>
+        <p>Investing has the potential to outpace inflation, helping to preserve your purchasing power.</p>
+
+        <h2>5. Achieve Financial Goals</h2>
+        <p>Investing can help you achieve long-term financial goals, such as buying a home or retiring comfortably.</p>
+
+        <h2>6. Tax Benefits</h2>
+        <p>Certain investments offer tax advantages, such as tax-deferred growth or tax-free income.</p>
+        </div>
+        </section>
+        <div class="flex-grow">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3"></h2>
+            <p class="leading-relaxed text-base">
+        <section id="policy">
+            <img src="https://tradebrains.in/wp-content/uploads/2018/07/Virtual-Stock-Trading-in-India.png">
+            <h1>Policy</h1>
+            <p>
+            <h2>1. Objective of Investment</h2>
+            <p>The primary objective of the investment company is to achieve long-term capital appreciation while
+                minimizing risk. Investments will be made with the goal of providing competitive returns to investors.
+            </p>
+
+            <h2>2. Risk Tolerance</h2>
+            <p>The company recognizes the inherent risks associated with investments. Risk assessment and management
+                strategies will be employed to ensure the preservation of capital and protect the interests of
+                investors.</p>
+
+            <h2>3. Asset Allocation</h2>
+            <p>A strategic asset allocation model will be employed, taking into consideration the risk tolerance,
+                investment horizon, and financial goals of the investors. Diversification across various asset classes
+                will be implemented to spread risk.</p>
+
+            <h2>4. Diversification</h2>
+            <p>Investments will be selected based on thorough fundamental analysis, financial modeling, and due
+                diligence. The company will adhere to ethical standards and legal requirements when making investment
+                decisions.</p>
+
+            <h2>5. Monitoring and Review</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+            </p>
+            <!-- Add more content as needed -->
+        </section>
+
+
+            <h1>Our Services</h1>
+             
+      
+
+
+        <p>Services Offered by Investment and Stock Market Websites<p>
+        <ul>
+            <li>
+                <strong>Trading Services:</strong>
+                <ul>
+                    <li>Stock Trading: Facilitating the buying and selling of stocks on various stock exchanges.</li>
+                    <li>Options Trading: Allowing users to trade options contracts.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Investment Accounts:</strong>
+                <ul>
+                    <li>Brokerage Accounts: Providing users with accounts to manage their investments.</li>
+                    <li>Retirement Accounts: Offering retirement-specific accounts like IRAs (Individual Retirement Accounts) or 401(k)s.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Research and Analysis:</strong>
+                <ul>
+                    <li>Market Research: Providing information on market trends, stock performance, and economic indicators.</li>
+                    <li>Financial Analysis Tools: Offering tools for technical and fundamental analysis of stocks.</li>
+                </ul>
+            </li>
+
+            <!-- Add more services as needed -->
+
+        </ul>
+
+        <p><em>It's important to note that users should carefully review the services provided by a particular platform, including fees, account minimums, and the range of available investment options, before choosing an investment or stock market website. Each platform may cater to different needs and preferences.</em></p>
+    
+
+
+
+                <p></p>
+                <!-- Add more content as needed -->
+        </section>
+
+        <!-- <section id="companies">
+            <h1>Featured Companies</h1><!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Featured Investment and Stock Market Companies</title>
+                <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        margin: 0;
+                        padding: 0;
+                        background-color: #f4f4f4;
+                    }
+            
+                    main {
+                        max-width: 800px;
+                        margin: 20px auto;
+                        background-color: #fff;
+                        padding: 20px;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                        border-radius: 5px;
+                    }
+            
+                    h2 {
+                        color: #333;
+                    }
+            
+                    ul {
+                        list-style-type: none;
+                        padding: 0;
+                    }
+            
+                    li {
+                        margin-bottom: 10px;
+                    }
+                </style>
+            </head>
+            <body>
+            
+                <main> -->
+                    <h2>Featured Investment and Stock Market Companies</h2>
+            
+                    <h3>Investment Companies:</h3>
+                    <ul>
+                        <li>BlackRock</li>
+                        <li>Vanguard</li>
+                        <li>Fidelity Investments</li>
+                        <li>Charles Schwab</li>
+                        <li>J.P. Morgan Asset Management</li>
+                    </ul>
+            
+                    <h3>Stock Brokerage Platforms:</h3>
+                    <ul>
+                        <li>E*TRADE</li>
+                        <li>TD Ameritrade</li>
+                        <li>Robinhood</li>
+                        <li>Interactive Brokers</li>
+                        <li>Webull</li>
+                    </ul>
+            
+                    <h3>Financial Services Companies:</h3>
+                    <ul>
+                        <li>Goldman Sachs</li>
+                        <li>Morgan Stanley</li>
+                        <li>Bank of America Merrill Lynch</li>
+                        <li>Citigroup</li>
+                        <li>Wells Fargo Advisors</li>
+                    </ul>
+            
+                    <h3>Online Investment Platforms:</h3>
+                    <ul>
+                        <li>Wealthfront</li>
+                        <li>Betterment</li>
+                        <li>SoFi Invest</li>
+                        <li>M1 Finance</li>
+                        <li>Acorns</li>
+                    </ul>
+            
+                    <h3>Global Exchanges:</h3>
+                    <ul>
+                        <li>New York Stock Exchange (NYSE)</li>
+                        <li>NASDAQ</li>
+                        <li>London Stock Exchange (LSE)</li>
+                        <li>Tokyo Stock Exchange (TSE)</li>
+                        <li>Hong Kong Stock Exchange (HKEX)</li>
+                    </ul>
+            
+                    <p><em>Before choosing an investment or stock market company, it's crucial to consider your individual investment goals, risk tolerance, and preferences. Additionally, regulatory compliance, fees, and the range of available investment products should be thoroughly reviewed. Always consult with financial professionals or advisors for personalized advice.</em></p>
+             
+        </section>
+        
+            <div class="comment">
+                <strong>User1:</strong> This is a great website!
+            </div>
+            <div class="comment">
+                <strong>User2:</strong> I love the content.
+            </div>
+        <br>
+        <h2>Our Team</h2>
+
+    <button onclick="showMember('Sanjana Bhardwaj')">Sanjana Bhardwaj</button>
+    <button onclick="showMember('Ekamveer singh')">Ekamveer singh</button>
+    <button onclick="showMember('Shubham')">Shubham</button>
+    <!-- Add more buttons for other team members -->
+
+   <div id="t1" class="team-member">
+        <img src="sanjana (2).jpeg" alt="sanjana" height="10px" weigth="10px">
+        <p>Roll No: 54</p>
+    </div>
+<br>
+    <div id="t2" class="team-member">
+        <img src="https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg" alt="t2">
+        <p>Roll No: 55</p>
+    </div>
+<br>
+<div id="t3" class="team-member">
+    <img src="https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"alt="t3">
+    <p>Roll No: 56</p>
+</div>
+            <!-- Comment Form -->
+            <form action="#" method="post">
+                <label for="username">Name:</label>
+                <input type="text" id="username" name="username" required>
+        
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" required></textarea>
+        
+                <button type="submit">Post Comment</button>
+            </form>
+        </div>
+        </script><br>
+        <br>
+            <ul class="footer-address">
+                <li class><a href="tel:1300 555 555">+91 9891065976</a></li>
+                <li class><a href="email.html"><span class="__cf_email__" data-cfemail="e68f888089a6969394838a89818f85c88f88">[email&#160;protected]</span></a></li>
+                <li class="addss"> phagwara ,punjab ,India</li>
+                </ul>
+            <div id="Footer_T75121FDA153_Col01" class="sf_colsIn col-sm-3 col-md-3 centered-on-mobile"
+            data-sf-element="Column 2" data-placeholder-label="Column 2">
+            <div class="sf-content-block content-block">
+                <div>
+                    <div class="button button-dark-background" style="text-align:center;"><a
+                            href="/news-room/newsletters">Subscribe to our newsletters</a></div>
+                </div>
+            </div>
+        </div>
+        </div><br>
+        <br>
+        <div class="row" data-sf-element="Row">
+        <div id="Footer_T75121FDA199_Col00" class="sf_colsIn col-md-12" data-sf-element="Column 1"
+            data-placeholder-label="Column 1">
+        </div>
+        </div>
+        </div>
+          </section>
+          <div class="bg-gray-100">
+            <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+                <p class="text-gray-500 text-sm text-center sm:text-left">© 2023 copyright —
+                    <a href="sanjana.rajbhar321@gmail.com" class="text-gray-600 ml-1" target="_blank"
+                        rel="noopener noreferrer">stock market and investment</a>
+                </p>
+                <span
+                    class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">Building wealth</span>
+                </span>
+            </div>
+        </div>
+          </body>
+          </html>
