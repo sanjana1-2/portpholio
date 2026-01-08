@@ -267,6 +267,14 @@ body::before {
   cursor: none !important;
 }
 
+/* Allow default cursor on inputs and textareas */
+input,
+textarea,
+button,
+select {
+  cursor: auto !important;
+}
+
 /* ===== ELEGANT HERO SECTION ===== */
 .hero-elegant {
   position: relative;
