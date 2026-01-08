@@ -29,7 +29,7 @@ function CV() {
               <button className="modal-close" onClick={() => setShowCV(false)}>✕</button>
               <img 
                 src="/images/cv.png" 
-                alt="Sanjana Rajbhar CV" 
+                alt="Sanjana Bhardwaj CV" 
                 className="cv-image"
               />
             </div>

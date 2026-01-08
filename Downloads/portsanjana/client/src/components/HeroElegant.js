@@ -15,12 +15,12 @@ function HeroElegant() {
         <div className="hero-elegant-content">
           <img 
             src="/images/profile.png" 
-            alt="Sanjana Rajbhar" 
+            alt="Sanjana Bhardwaj" 
             className="profile-image-elegant"
           />
 
           <h1 className="hero-headline-elegant">
-            {renderWords('SANJANA RAJBHAR')}
+            {renderWords('SANJANA BHARDWAJ')}
           </h1>
 
           <p className="hero-subtitle-elegant">

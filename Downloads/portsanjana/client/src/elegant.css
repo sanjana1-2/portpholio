@@ -10,7 +10,6 @@
   --text-secondary: #b0b0b0;
   --text-muted: #808080;
   --border-soft: rgba(0, 217, 255, 0.1);
-  --glow-soft: rgba(0, 217, 255, 0.15);
 }
 
 /* ===== ELEGANT ANIMATIONS ===== */
@@ -66,73 +65,6 @@
   100% {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@keyframes softGlow {
-  0%, 100% {
-    box-shadow: 0 0 20px rgba(0, 217, 255, 0.1);
-  }
-  50% {
-    box-shadow: 0 0 40px rgba(0, 217, 255, 0.2);
-  }
-}
-
-@keyframes breathe {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.02);
-  }
-}
-
-@keyframes floatGently {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-@keyframes buttonLift {
-  0%, 100% {
-    transform: translateY(0);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  }
-  50% {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0, 217, 255, 0.15);
-  }
-}
-
-@keyframes underlineStroke {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-@keyframes sectionDissolve {
-  0% {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes parallaxFloat {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(var(--parallax-offset, 30px));
   }
 }
 
@@ -586,7 +518,7 @@ section h2::after {
 /* ===== ELEGANT LINKS ===== */
 a {
   position: relative;
-  color: var(--accent-gold);
+  color: var(--accent-primary);
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -598,7 +530,7 @@ a::after {
   left: 0;
   width: 0;
   height: 1px;
-  background: var(--accent-gold);
+  background: var(--accent-primary);
   transition: width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
@@ -661,10 +593,22 @@ a:hover::after {
 }
 
 .nav-brand-elegant {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
   font-size: 1.3rem;
-  font-weight: 300;
+  font-weight: 700;
   letter-spacing: 2px;
-  color: var(--accent-gold);
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #00d9ff, #ff006e, #8338ec);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: all 0.3s ease;
+}
+
+.nav-brand-elegant:hover {
+  filter: drop-shadow(0 0 10px rgba(0, 217, 255, 0.5));
 }
 
 .nav-links-elegant {
@@ -682,11 +626,11 @@ a:hover::after {
 }
 
 .nav-links-elegant a:hover {
-  color: var(--accent-gold);
+  color: var(--accent-primary);
 }
 
 .nav-links-elegant a::after {
-  background: var(--accent-gold);
+  background: var(--accent-primary);
 }
 
 @media (max-width: 768px) {

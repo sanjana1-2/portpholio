@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="container">
-        <p>&copy; 2025 SANJANA RAJBHAR. RELENTLESS.</p>
+        <p>&copy; 2025 SANJANA BHARDWAJ. RELENTLESS.</p>
         <div className="social-links">
           <a href="https://linkedin.com/in/sanjana21" target="_blank" rel="noopener noreferrer" title="LinkedIn">
             <i className="fab fa-linkedin"></i>
